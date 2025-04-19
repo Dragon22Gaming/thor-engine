@@ -1,6 +1,9 @@
 package render
 
 import rl "vendor:raylib"
+import window "window"
+import sprite "sprite"
+import camera "camera"
 
 init :: proc() {
     // Any init logic if needed later

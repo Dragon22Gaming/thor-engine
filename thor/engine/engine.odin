@@ -1,12 +1,11 @@
-package thor
+package engine
 
-import render "render"
+import graphics "graphics"
 import input "platform/input"
-import window "platform/window"
 
 Input  :: input
-Render :: render
-Window :: window
+Graphics :: graphics
+Window :: graphics.window
 
 startup :: proc(title: cstring, width: i32, height: i32) {
     window.init(title, width, height)
