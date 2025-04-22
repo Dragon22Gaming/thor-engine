@@ -1,7 +1,8 @@
 #!/bin/bash
 
 EXAMPLE=$1
-RUN=$2
+RENDERER=$2
+RUN=$3
 
 if [ -z "$EXAMPLE" ]; then
   echo "Usage: ./build_example.sh <example-name> -flags
@@ -21,4 +22,8 @@ if [ $RUN == "-r" ]; then
   echo "running binary:"
 
   "./target/$EXAMPLE/$EXAMPLE.bin"
+fi
+
+if ![ -z "$RENDERER" ]; then
+  echo "Renderer: $RENDERER"
 fi
